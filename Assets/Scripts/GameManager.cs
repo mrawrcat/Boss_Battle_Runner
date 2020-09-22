@@ -13,7 +13,13 @@ public class GameManager : MonoBehaviour
     public float distanceMoved;
     public float invincible;
 
-    public float turn_tilemap_off;
+    [Header("Player Stats")]
+    public float move_speed;
+    public float jump_force;
+
+    [Header("Tilemap Stuff")]
+    public float turn_tilemap_off_x;
+    public float spawn_tilemap_x;
     public float deadheight;
     [Header("Game/Player Status")]
     public bool dead;
@@ -53,6 +59,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        savefinalSpeed = finalSpeed;
         if (dead || movingReset)
         {
             finalSpeed = 0;
@@ -60,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            finalSpeed = savefinalSpeed;
+            //finalSpeed = savefinalSpeed;
         }
         
         if(invincible > 0)

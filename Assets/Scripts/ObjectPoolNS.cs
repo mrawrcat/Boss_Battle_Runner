@@ -56,9 +56,9 @@ public class ObjectPoolNS : MonoBehaviour
 
         GameObject objToSpawn =  poolDictionary[tag].Dequeue();
         objToSpawn.SetActive(true);
-        objToSpawn.transform.position = pos + new Vector2(0, tileheight);
-        float additonal_height = objToSpawn.GetComponent<TilemapHeight>().Height;
-        tileheight += additonal_height;
+        objToSpawn.transform.position = pos + new Vector2(0, 0);
+        //float additonal_height = objToSpawn.GetComponent<TilemapHeight>().Height;
+        //tileheight += additonal_height;
 
         //objToSpawn.transform.SetParent(Grid.transform);
 
@@ -118,7 +118,7 @@ public class ObjectPoolNS : MonoBehaviour
     }
     public void SpawnTileMap()
     {
-        SpawnFromPool(tags[Random.Range(2, tags.Length)], transform.position + new Vector3(100,0,0));
+        SpawnFromPool(tags[Random.Range(2, tags.Length)], transform.position + new Vector3(GameManager.manager.spawn_tilemap_x,0,0));
     }
     public void SpawnCheckpointTilemap()
     {
