@@ -56,7 +56,7 @@ public class PlayerAttack : MonoBehaviour
                 if (holding_atk_timer > 1f)
                 {
                     Attack();
-                    Shoot_Bullet();
+                    //Shoot_Bullet();
                     Debug.Log("holding power atk");
                 }
                 else

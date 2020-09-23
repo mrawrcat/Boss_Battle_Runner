@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 50d0a0447e8a1544d92955175a3e25ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1448697582367449545
+    second: placeholder boss with status_0
+  - first:
+      213: -5193778811043163849
+    second: placeholder boss with status_1
+  - first:
+      213: -743791187373436862
+    second: placeholder boss with status_2
+  - first:
+      213: 395381842084110519
+    second: placeholder boss with status_3
+  - first:
+      213: 768383964058963914
+    second: placeholder boss with status_4
+  - first:
+      213: -6153353086825639892
+    second: placeholder boss with status_5
+  - first:
+      213: -9160459451074766217
+    second: placeholder boss with status_6
+  - first:
+      213: -5837915171896254601
+    second: placeholder boss with status_7
+  - first:
+      213: -8748571114514717896
+    second: placeholder boss with status_8
+  - first:
+      213: -8875506765693411171
+    second: placeholder boss with status_9
+  - first:
+      213: -2765145121921336150
+    second: placeholder boss with status_10
+  - first:
+      213: -5912430815580241452
+    second: placeholder boss with status_11
+  - first:
+      213: 2791243742803844170
+    second: placeholder boss with status_12
+  - first:
+      213: 6731090898845478319
+    second: placeholder boss with status_13
+  - first:
+      213: -8017125210290573766
+    second: placeholder boss with status_14
+  - first:
+      213: 1143367078379710163
+    second: placeholder boss with status_15
+  - first:
+      213: 347316557777909903
+    second: placeholder boss with status_16
+  - first:
+      213: -1458732253802251044
+    second: placeholder boss with status_17
+  - first:
+      213: 5843574896724456736
+    second: placeholder boss with status_18
+  - first:
+      213: 2591909270439908852
+    second: placeholder boss with status_19
+  - first:
+      213: 4804751448025896411
+    second: placeholder boss with status_20
+  - first:
+      213: 1390241796385210143
+    second: placeholder boss with status_21
+  - first:
+      213: 2220450680591014598
+    second: placeholder boss with status_22
+  - first:
+      213: -8828337569078743617
+    second: placeholder boss with status_23
+  - first:
+      213: -4868140134926706541
+    second: placeholder boss with status_24
+  - first:
+      213: -6195082413646390004
+    second: placeholder boss with status_25
+  - first:
+      213: -3893197682756734985
+    second: placeholder boss with status_26
+  - first:
+      213: -4190605298038866356
+    second: placeholder boss with status_27
+  - first:
+      213: 456026313670426424
+    second: placeholder boss with status_28
+  - first:
+      213: -1630870808250952896
+    second: placeholder boss with status_29
+  - first:
+      213: 3438746236056874177
+    second: placeholder boss with status_30
+  - first:
+      213: 6616303647949070148
+    second: placeholder boss with status_31
+  - first:
+      213: 5087970981521614131
+    second: placeholder boss with status_32
+  - first:
+      213: -7406627571852823930
+    second: placeholder boss with status_33
+  - first:
+      213: 6188991495681519550
+    second: placeholder boss with status_34
+  - first:
+      213: -8238050723389107508
+    second: placeholder boss with status_35
+  - first:
+      213: -4057504486855768944
+    second: placeholder boss with status_36
+  - first:
+      213: 2238164404386537912
+    second: placeholder boss with status_37
+  - first:
+      213: 4140424634416176278
+    second: placeholder boss with status_38
+  - first:
+      213: -5291876094279628240
+    second: placeholder boss with status_39
+  - first:
+      213: -3109803867714919114
+    second: placeholder boss with status_40
+  - first:
+      213: 5751726665906733686
+    second: placeholder boss with status_41
+  - first:
+      213: -4523123032154973121
+    second: placeholder boss with status_42
+  - first:
+      213: -7135532971410652917
+    second: placeholder boss with status_43
+  - first:
+      213: -4402034702251457616
+    second: placeholder boss with status_44
+  - first:
+      213: -3620001170987373298
+    second: placeholder boss with status_45
+  - first:
+      213: -3206505001509280
+    second: placeholder boss with status_46
+  - first:
+      213: -2820893376351434563
+    second: placeholder boss with status_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: placeholder boss with status_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1aaff86ceca1410800000000000000
+      internalID: 1448697582367449545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73152dd60bdfbe7b0800000000000000
+      internalID: -5193778811043163849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2405a891bd58da5f0800000000000000
+      internalID: -743791187373436862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b02018c0bdac7500800000000000000
+      internalID: 395381842084110519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf47dce429d9aa00800000000000000
+      internalID: 768383964058963914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20543a28f5ea9aa0800000000000000
+      internalID: -6153353086825639892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a9157d9a28fd080800000000000000
+      internalID: -9160459451074766217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f924ee41f8bfea0800000000000000
+      internalID: -5837915171896254601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8336b1b5ce4d69680800000000000000
+      internalID: -8748571114514717896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90a44dfe9dd3d480800000000000000
+      internalID: -8875506765693411171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: placeholder boss with status_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 34
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac7977792b30a9d0800000000000000
+      internalID: -2765145121921336150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

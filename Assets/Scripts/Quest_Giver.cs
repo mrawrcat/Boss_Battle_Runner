@@ -19,12 +19,23 @@ public class Quest_Giver : MonoBehaviour
     public RectTransform descTransform;
     public bool showedQuest = false;
     public int questNum;
+    [Header("prevent dirty")]
+    public GameObject prevent_dirty_canvas;
+
+
+    public float timeOfTravel = 5; //time after object reach a target place 
+    public float currentTime = 0; // actual floting time 
+    float normalizedValue;
+    public Vector2 rectTrans_hide;
+    public Vector2 rectTrans_show;
+
     void Start()
     {
         questNum = Random.Range(0, how_many_quests);
-        Talk_to_Quest_Giver();
+        //Talk_to_Quest_Giver();
         //descTransform.anchoredPosition = new Vector2(0, 300);
-        //showedQuest = false;
+
+
     }
 
     void Update()
@@ -33,25 +44,32 @@ public class Quest_Giver : MonoBehaviour
         quest_name_desc = Quest.Quest_Description;
         descTxt.text = quest_name_desc;
 
+        
         if (!showedQuest)
         {
-            StartCoroutine(Show_Quest());
+            prevent_dirty_canvas.SetActive(true);
+
         }
         else
         {
-            StartCoroutine(Hide_Quest());
+            prevent_dirty_canvas.SetActive(false);
         }
+       
     }
 
     public void Talk_to_Quest_Giver()
     {
         if(!Assigned_Quest && !Helped)
         {
+            Debug.Log("Got Quest");
             Assign_Quest();
-            
+            showedQuest = false;
+            StartCoroutine(Show_And_Hide_Quest(rectTrans_hide, rectTrans_show));
+
         }
         else if(Assigned_Quest && !Helped)
         {
+            Debug.Log("already have quest");
             Giver_Checks_Quest();
         }
         
@@ -79,12 +97,14 @@ public class Quest_Giver : MonoBehaviour
     {
         Assigned_Quest = false;
         Helped = false;
+
     }
     IEnumerator Show_Quest()
     {
-        descTransform.anchoredPosition = new Vector2(0, 300);
+        //descTransform.anchoredPosition = new Vector2(0, 300);
+        prevent_dirty_canvas.SetActive(true);
         yield return new WaitForSeconds(1f);
-        descTransform.anchoredPosition = Vector2.Lerp(descTransform.anchoredPosition, new Vector2(0, -75), 5f * Time.deltaTime);
+        descTransform.anchoredPosition = Vector2.Lerp(descTransform.anchoredPosition, new Vector2(0, 400), 5f * Time.deltaTime);
         yield return new WaitForSeconds(1f);
         showedQuest = true;
 
@@ -93,11 +113,62 @@ public class Quest_Giver : MonoBehaviour
     IEnumerator Hide_Quest()
     {
         yield return new WaitForSeconds(1f);
-        descTransform.anchoredPosition = Vector2.Lerp(descTransform.anchoredPosition, new Vector2(0, 300), 5f * Time.deltaTime);
+        descTransform.anchoredPosition = Vector2.Lerp(descTransform.anchoredPosition, new Vector2(0, 700), 5f * Time.deltaTime);
+        yield return new WaitForSeconds(1f);
+        prevent_dirty_canvas.SetActive(false);
     }
 
     public void Move_Quest_Text()
     {
         descTransform.anchoredPosition = Vector2.Lerp(descTransform.anchoredPosition, new Vector2(0, 0), 5f * Time.deltaTime);
     }
+
+    IEnumerator Show_And_Hide_Quest(Vector2 start_pos, Vector2 end_pos)
+    {
+        currentTime = 0;
+        yield return new WaitForSeconds(1f);
+        while (currentTime <= timeOfTravel)
+        {
+            currentTime += Time.deltaTime;
+            normalizedValue = currentTime / timeOfTravel; // we normalize our time 
+            descTransform.anchoredPosition = Vector3.Lerp(start_pos, end_pos, normalizedValue);
+            yield return null;
+        }
+        if (descTransform.anchoredPosition == end_pos)
+        {
+            currentTime = 0;
+            yield return new WaitForSeconds(1f);
+            while (currentTime <= timeOfTravel)
+            {
+                currentTime += Time.deltaTime;
+                normalizedValue = currentTime / timeOfTravel; // we normalize our time 
+                descTransform.anchoredPosition = Vector3.Lerp(end_pos, start_pos, normalizedValue);
+                yield return null;
+            }
+            if (descTransform.anchoredPosition == start_pos)
+            {
+                showedQuest = true;
+            }
+        }
+    }
+
+    IEnumerator LerpObject(Vector2 start_pos, Vector2 end_pos)
+    {
+        showedQuest = false;
+        //yield return new WaitForSeconds(1f);
+        while (currentTime <= timeOfTravel)
+        {
+            currentTime += Time.deltaTime;
+            normalizedValue = currentTime / timeOfTravel; // we normalize our time 
+            descTransform.anchoredPosition = Vector3.Lerp(start_pos, end_pos, normalizedValue);
+            yield return null;
+        }
+        if(descTransform.anchoredPosition == end_pos)
+        {
+            showedQuest = true;
+        }
+
+    }
+
+    
 }
