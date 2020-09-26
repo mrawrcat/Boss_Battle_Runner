@@ -20,8 +20,8 @@ public class PlayerCollisions : MonoBehaviour
 
     [Header("Colliders")]
     private BoxCollider2D normal_collider;
-    public GameObject revive_collider;
-    public GameObject revive_ground;
+    //public GameObject revive_collider;
+    //public GameObject revive_ground;
 
     private void Start()
     {
@@ -43,13 +43,13 @@ public class PlayerCollisions : MonoBehaviour
             if (insideWall)
             {
                 //normal_collider.isTrigger = true;
-                revive_collider.SetActive(true);
+                //revive_collider.SetActive(true);
                 //revive_ground.SetActive(true);
             }
             else
             {
                 normal_collider.isTrigger = false;
-                revive_collider.SetActive(false);
+                //revive_collider.SetActive(false);
                 //revive_ground.SetActive(false);
             }
 
@@ -57,7 +57,7 @@ public class PlayerCollisions : MonoBehaviour
             if (GameManager.manager.invincible > 0)
             {
                 //normal_collider.isTrigger = true;
-                revive_collider.SetActive(true);
+                //revive_collider.SetActive(true);
                 //revive_ground.SetActive(true);
             }
             else
@@ -65,7 +65,7 @@ public class PlayerCollisions : MonoBehaviour
                 if (!insideWall)
                 {
                     normal_collider.isTrigger = false;
-                    revive_collider.SetActive(false);
+                    //revive_collider.SetActive(false);
                     //revive_ground.SetActive(false);
                 }
             }

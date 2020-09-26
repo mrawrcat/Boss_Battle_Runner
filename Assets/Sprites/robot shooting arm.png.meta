@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 80e968a076e123c4cbfac62c1ebb3dd9
+guid: b94c9fe84c701eb418c9400e5cccb577
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6932761298585323035
-    second: robot moving 9-24-2020_0
+      213: 6843607929639890999
+    second: robot shooting arm_0
   - first:
-      213: 2802125215445788635
-    second: robot moving 9-24-2020_1
+      213: -7817586640569659573
+    second: robot shooting arm_1
   - first:
-      213: -7765073268617680427
-    second: robot moving 9-24-2020_2
+      213: 821291222199099801
+    second: robot shooting arm_2
   - first:
-      213: -6454163363039594650
-    second: robot moving 9-24-2020_3
-  - first:
-      213: 6126140629391185916
-    second: robot moving 9-24-2020_4
-  - first:
-      213: 9193227711943535883
-    second: robot moving 9-24-2020_5
-  - first:
-      213: -2940943075757527327
-    second: robot moving 9-24-2020_6
-  - first:
-      213: -6786325011297462772
-    second: robot moving 9-24-2020_7
+      213: -8441092251218408990
+    second: robot shooting arm_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -149,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robot moving 9-24-2020_0
+      name: robot shooting arm_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1601c27bad163060800000000000000
-      internalID: 6932761298585323035
+      spriteID: 7307b3c272169fe50800000000000000
+      internalID: 6843607929639890999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot moving 9-24-2020_1
+      name: robot shooting arm_1
       rect:
         serializedVersion: 2
         x: 32
@@ -184,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd7afc2890623e620800000000000000
-      internalID: 2802125215445788635
+      spriteID: b4f8108ae5a528390800000000000000
+      internalID: -7817586640569659573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot moving 9-24-2020_2
+      name: robot shooting arm_2
       rect:
         serializedVersion: 2
         x: 64
@@ -205,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d96929d00bec3490800000000000000
-      internalID: -7765073268617680427
+      spriteID: 991e254e300d56b00800000000000000
+      internalID: 821291222199099801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot moving 9-24-2020_3
+      name: robot shooting arm_3
       rect:
         serializedVersion: 2
         x: 96
@@ -226,92 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6673fafed943e66a0800000000000000
-      internalID: -6454163363039594650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robot moving 9-24-2020_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf713fad17c640550800000000000000
-      internalID: 6126140629391185916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robot moving 9-24-2020_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0debad65e7e49f70800000000000000
-      internalID: 9193227711943535883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robot moving 9-24-2020_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eee3d8badbaf27d0800000000000000
-      internalID: -2940943075757527327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robot moving 9-24-2020_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0614439b5122d1a0800000000000000
-      internalID: -6786325011297462772
+      spriteID: 2e903d102573bda80800000000000000
+      internalID: -8441092251218408990
       vertices: []
       indices: 
       edges: []
