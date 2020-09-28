@@ -67,7 +67,7 @@ public class ObjectPoolNS : MonoBehaviour
         return objToSpawn;
     }
 
-    public GameObject SpawnProjectile(string tag, Vector2 pos)
+    public GameObject SpawnProjectile(string tag, Vector2 pos, Vector2 dir)
     {
         if (!poolDictionary.ContainsKey(tag))
         {
@@ -78,8 +78,9 @@ public class ObjectPoolNS : MonoBehaviour
         GameObject objToSpawn = poolDictionary[tag].Dequeue();
         objToSpawn.SetActive(true);
         objToSpawn.transform.position = pos;
+        
         objToSpawn.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        objToSpawn.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speed, ForceMode2D.Impulse);
+        objToSpawn.GetComponent<Rigidbody2D>().AddForce(dir * speed, ForceMode2D.Impulse);
         poolDictionary[tag].Enqueue(objToSpawn);
 
         return objToSpawn;
@@ -129,9 +130,9 @@ public class ObjectPoolNS : MonoBehaviour
         SpawnFromPool(tags[Random.Range(1, 2)], transform.position + new Vector3(100, 0, 0));
     }
 
-    public void SpawnProjectile(Transform pos)
+    public void SpawnProjectile(Transform pos, Vector2 dir)
     {
-        SpawnProjectile(tags[Random.Range(0, tags.Length)], pos.position);
+        SpawnProjectile(tags[Random.Range(0, tags.Length)], pos.position, dir);
         Debug.Log("projectile spawned");
     }
 

@@ -74,7 +74,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Shoot_Bullet()
     {
-        bullet_pool.SpawnProjectile(Atk_Pos);
+        //bullet_pool.SpawnProjectile(Atk_Pos, Quaternion.identity);
     }
 
     public void Attack()

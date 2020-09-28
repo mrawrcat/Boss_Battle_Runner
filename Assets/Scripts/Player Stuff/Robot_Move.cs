@@ -8,6 +8,8 @@ public class Robot_Move : MonoBehaviour
     private float move_speed = 10f;
     [SerializeField]
     private float x;
+
+    public float left, right;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,19 +26,19 @@ public class Robot_Move : MonoBehaviour
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
 
-        if (transform.position.x <= -2 && transform.position.x >= -8)
+        if (transform.position.x <= right && transform.position.x >= left)
         {
             rb2d.velocity = new Vector2(dir.x * move_speed, rb2d.velocity.y);
         }
-        else if (transform.position.x < -8)
+        else if (transform.position.x < left)
         {
-            transform.position = new Vector2(-8, transform.position.y);
-            //rb2d.velocity = new Vector2(5, rb2d.velocity.y);
+            //transform.position = new Vector2(left, transform.position.y);
+            rb2d.velocity = new Vector2(5, rb2d.velocity.y);
         }
-        else if (transform.position.x > -2)
+        else if (transform.position.x > right)
         {
-            transform.position = new Vector2(-2, transform.position.y);
-            //rb2d.velocity = new Vector2(-5, rb2d.velocity.y);
+            //transform.position = new Vector2(right, transform.position.y);
+            rb2d.velocity = new Vector2(-5, rb2d.velocity.y);
         }
         else
         {
