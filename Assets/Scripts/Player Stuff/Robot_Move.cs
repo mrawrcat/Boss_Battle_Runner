@@ -37,8 +37,8 @@ public class Robot_Move : MonoBehaviour
         }
         else if (transform.position.x > right)
         {
-            //transform.position = new Vector2(right, transform.position.y);
-            rb2d.velocity = new Vector2(-5, rb2d.velocity.y);
+            transform.position = new Vector2(right, transform.position.y);
+            //rb2d.velocity = new Vector2(-5, rb2d.velocity.y);
         }
         else
         {

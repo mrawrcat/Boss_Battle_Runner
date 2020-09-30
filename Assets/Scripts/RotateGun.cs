@@ -11,9 +11,11 @@ public class RotateGun : MonoBehaviour
     public Joystick joystick;
     private Rigidbody2D rb2d;
     private bool attacking;
-    private bool shooting;
+    public bool shooting;
     public float attack_delay;
     public Vector2 joy_dir;
+    public GameObject bullet_prefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,31 +31,47 @@ public class RotateGun : MonoBehaviour
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
 
-        joy_dir = new Vector2(joystick.Horizontal, joystick.Vertical);
+        //joy_dir = new Vector2(joystick.Horizontal, joystick.Vertical);
+        joy_dir = joystick.Direction;
 
-       if(joy_dir.x != 0 || joy_dir.y != 0)
-       {
+
+        if(joy_dir.x != 0 || joy_dir.y != 0)
+        {
             shooting = true;
             Debug.Log("dir not null");
-       }
+        }
         else
         {
             shooting = false;
         }
-        transform.position = stay_pos.position;
+       
+       transform.position = stay_pos.position;
     }
 
     private void FixedUpdate()
     {
-
-        Vector2 look_vec = new Vector2(joy_dir.x, joy_dir.y);
-        float angle = Mathf.Atan2(look_vec.x, look_vec.y) * Mathf.Rad2Deg - 90;
-        rb2d.rotation = -angle;
-
-        if (shooting)
+      
+        if(joy_dir.x == 0 && joy_dir.y == 0)
         {
-            Attack();
+            Vector2 look_vec = new Vector2(joy_dir.x, joy_dir.y);
+            float angle = Mathf.Atan2(look_vec.x, look_vec.y) * Mathf.Rad2Deg;
+            rb2d.rotation = -angle;
         }
+        else
+        {
+
+            Vector2 look_vec = new Vector2(joy_dir.x, joy_dir.y);
+            float angle = Mathf.Atan2(look_vec.x, look_vec.y) * Mathf.Rad2Deg - 90;
+            rb2d.rotation = -angle;
+            if(shooting)
+            {
+                Attack();
+            }
+        }
+        
+        //Vector2 look_at_crosshair = new Vector2(crosshair.x, crosshair.y);
+        //Vector2 look_vec = look_at_crosshair - rb2d.position;
+
         //Vector2 obj_pos = new Vector2(transform.position.x, transform.position.y);
         
         /*
@@ -82,6 +100,10 @@ public class RotateGun : MonoBehaviour
 
     void Shoot()
     {
-        bullet_pool.SpawnProjectile(atkpos, joy_dir);
+
+        //bullet_pool.SpawnProjectile(atkpos, joy_dir);
+        bullet_pool.SpawnProjectile2(atkpos);
     }
+
+
 }

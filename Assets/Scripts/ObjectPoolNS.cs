@@ -86,6 +86,27 @@ public class ObjectPoolNS : MonoBehaviour
         return objToSpawn;
     }
 
+    public GameObject SpawnProjectile2(string tag, Transform pos)
+    {
+        if (!poolDictionary.ContainsKey(tag))
+        {
+            Debug.LogWarning("Pool with Tag " + tag + " doesnt exist");
+            return null;
+        }
+
+        GameObject objToSpawn = poolDictionary[tag].Dequeue();
+        objToSpawn.SetActive(true);
+        objToSpawn.transform.position = pos.position;
+
+        Rigidbody2D proj_rb = objToSpawn.GetComponent<Rigidbody2D>();
+        proj_rb.velocity = Vector2.zero;
+        proj_rb.AddForce(pos.right * speed, ForceMode2D.Impulse);
+        //objToSpawn.GetComponent<Rigidbody2D>().AddForce(pos.up * speed, ForceMode2D.Impulse);
+        poolDictionary[tag].Enqueue(objToSpawn);
+
+        return objToSpawn;
+    }
+
     public GameObject SpawnParticle(string tag, Vector2 pos)
     {
         if (!poolDictionary.ContainsKey(tag))
@@ -133,7 +154,13 @@ public class ObjectPoolNS : MonoBehaviour
     public void SpawnProjectile(Transform pos, Vector2 dir)
     {
         SpawnProjectile(tags[Random.Range(0, tags.Length)], pos.position, dir);
-        Debug.Log("projectile spawned");
+        ///Debug.Log("projectile spawned");
+    }
+
+    public void SpawnProjectile2(Transform pos)
+    {
+        SpawnProjectile2(tags[Random.Range(0, tags.Length)], pos);
+        ///Debug.Log("projectile spawned");
     }
 
     public void SpawnParticle(Transform pos)
