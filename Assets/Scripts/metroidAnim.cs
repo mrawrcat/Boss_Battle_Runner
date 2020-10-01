@@ -43,11 +43,13 @@ public class metroidAnim : MonoBehaviour
         Aim_State();
         Shoot_State();
 
-    }
-    private void FixedUpdate()
-    {
-    }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
 
+    }
+    
     private void Change_Anim_State(string newState)
     {
         if (current_state == newState)
