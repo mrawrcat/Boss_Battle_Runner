@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSimpleJump : MonoBehaviour
 {
     [SerializeField]
-    private float jumpforce;
+    private float jumpforce = 10;
 
     private Animator anim;
     private Rigidbody2D rb2d;

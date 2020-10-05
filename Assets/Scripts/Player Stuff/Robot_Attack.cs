@@ -11,7 +11,7 @@ public class Robot_Attack : MonoBehaviour
     private Transform atk_pos;
 
     [SerializeField]
-    private float attack_delay;
+    private float attack_delay = 0.5f;
 
     [SerializeField]
     private ObjectPoolNS bullet_pool;

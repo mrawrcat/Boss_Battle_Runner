@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private Animator anim;
     //private CamShake shake;
-    private bool isFrozen;
+    //private bool isFrozen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -118,14 +118,14 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    public IEnumerator hit_pause(float dur)
+    public IEnumerator hit_pause(float dur)//for pause when melee hit maybe bullet hit too?
     {
-        isFrozen = true;
+        //isFrozen = true;
         var original_timescale = Time.timeScale;
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(dur);
         Time.timeScale = original_timescale;
-        isFrozen = false;
+        //isFrozen = false;
     }
 
     void OnDrawGizmos()

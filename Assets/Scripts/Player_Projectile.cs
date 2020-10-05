@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player_Projectile : MonoBehaviour
 {
-
     public Vector3 dir;
     public float speed;
 
@@ -15,9 +14,11 @@ public class Player_Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Enemy")
-        {
-            Debug.Log("player projectile hit enemy");
+        { 
+            ProjectileEvents.projectile_event.Hit_Enemy();
             gameObject.SetActive(false);
         }
     }
+
+    
 }

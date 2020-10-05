@@ -78,11 +78,11 @@ public class ObjectPoolNS : MonoBehaviour
         GameObject objToSpawn = poolDictionary[tag].Dequeue();
         objToSpawn.SetActive(true);
         objToSpawn.transform.position = pos;
-        objToSpawn.GetComponent<Player_Projectile>().dir = dir;
-        objToSpawn.GetComponent<Player_Projectile>().speed = speed;
+        //objToSpawn.GetComponent<Player_Projectile>().dir = dir;
+        //objToSpawn.GetComponent<Player_Projectile>().speed = speed;
         //objToSpawn.transform.position += dir * speed * Time.deltaTime;
-        //objToSpawn.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        //objToSpawn.GetComponent<Rigidbody2D>().AddForce(dir * speed, ForceMode2D.Impulse);
+        objToSpawn.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        objToSpawn.GetComponent<Rigidbody2D>().AddForce(dir * speed, ForceMode2D.Impulse);
         poolDictionary[tag].Enqueue(objToSpawn);
 
         return objToSpawn;
