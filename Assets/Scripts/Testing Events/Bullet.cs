@@ -11,7 +11,10 @@ public class Bullet : MonoBehaviour
         //rb2d = GetComponent<Rigidbody2D>();
         //rb2d.velocity = transform.right * speed;
     }
-   
+    private void FixedUpdate()
+    {
+        //rb2d.velocity = transform.right * speed;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")

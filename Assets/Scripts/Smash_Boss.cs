@@ -82,13 +82,11 @@ public class Smash_Boss : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            boss_cutscene.SetActive(true);
+            //Debug.Break();
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            boss_cutscene.SetActive(false);
-        }
+        
+       
     }
 
     private void Anticipate()
@@ -130,10 +128,12 @@ public class Smash_Boss : MonoBehaviour
     IEnumerator Play_Boss_Cutscene()
     {
         boss_cutscene.SetActive(true);
+        GameManager.manager.finalSpeed = 0;
         yield return new WaitForSeconds(1.5f);
         boss_cutscene.SetActive(false);
+        GameManager.manager.finalSpeed = 10;
         boss_active = true;
-        //yield return new WaitForSecondsRealtime(.5f);
+        
     }
     private void Hit_Enemy()
     {
